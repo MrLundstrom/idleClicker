@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+//BULMA CUSTOMIZATIONS
+$column-gap: 0;
+$normal-value: 0.75;
+$padding: $normal-value*1rem;
+$margin: $normal-value*1rem;
+$card-content-padding: $normal-value*0.5rem;
+$primary: hsl( 180, 40%, 14%);
+$tablet: 768px !default;
+
+@import '../node_modules/bulma/bulma.sass';
+
+//FUNCTIONS AND KEYFRAMES
+@function pow($number, $exponent) {
+    $value: 1;
+  
+    @if $exponent > 0 {
+      @for $i from 1 through $exponent {
+        $value: $value * $number;
+      }
+    }
+  
+    @return $value; 
+  }
+  html{
+      height:100vh;
+      width:100vw;
+  }
+.fill{
+    display:flex !important;
+    flex: 1 !important;
+}
+.center-content{
+    justify-content: center;
+}
+.click{
+    background: radial-gradient(closest-side, lighten($dark, 20%),$dark);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+.no-click{
+    background: radial-gradient(closest-side,lighten($dark, 20%),$dark);
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+}
+.padding-top{
+    padding-top: $padding/2;
+}
+.scrollable{
+    overflow-y: scroll;
+}
+
+@for $k from 0 through 8 {    
+    $value: $normal-value*$k *0.5rem;
+
+    .padding-#{$k} {
+        padding: $value !important
+    }
+    .side-padding-#{$k}{
+        padding: 0 $value !important
+    }
+    .side-margin-#{$k}{
+        margin: 0 $value !important
+    }
+    .margin-#{$k}{
+        margin: $value !important
+    }
+}
+.hero {
+    &.double-navbar{
+        min-height: calc(100vh - 6.5rem);
+    }
+    .hero-body{
+        padding: 1.5rem 0.75rem;
+    }
+}
+
+.gotSticky{
+    position: relative;
+    .sticky{
+        position: sticky;
+        top:0;
+        z-index: 1;
+        &.navbar-sticky{
+            top:3.25rem;
+        }
+    }
+}
+.is-fullheight{
+    height:100%;
+}
+.is-fullwidth{
+    width:100%;
+}
+
+.upgradeProgress{
+    width:100%;
+    height: 0.25rem;
+    background-color: $light;
+    .value{
+        background-color: $primary;
+        height:100%;
+        @for $i from 0 through 25 {
+            $width: percentage($i * 4/100);
+
+            &.size-#{$i} {
+              width: $width;
+              transition: linear 0.2s;
+            }
+        }
+    }
+}
+
+.progressContainer {
+    height: 1.5rem;
+    width:100;
+    background-color: $light;
+    border-radius: 0.75rem;
+    opacity: 1;
+
+    .progressValue{
+        opacity: 1;
+        border-radius: 0.75rem;
+        height:100%;
+        width: 0%;
+        &.on{
+            animation: infinite;
+            background-color: $dark;
+            animation-name: run;    
+
+            @for $k from 0 through 8 {    
+                $number: (1/4) * pow(2,$k );
+
+                &.timer-#{$number*4} {
+                  animation-duration: $number* 1s;
+                  animation-timing-function: linear;
+                }
+            }
+        }
+    }
+    
+      
+      @keyframes run {
+        from {
+          width: 0%; 
+        }
+      
+        to {
+          width: 100%;
+        }
+      }
+}

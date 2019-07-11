@@ -1,0 +1,45 @@
+<div class="gotSticky">
+    <section class="hero is-dark sticky"
+        [ngClass]="{'double-navbar':showInfo != 'chevron-down'}">
+        <div class="hero-head">
+            <div class="container">
+                <div class="columns is-mobile has-text-centered padding-1">
+                    <div class="column">
+                        <h2 class="subtitle is-4 margin-0">
+                            ${{M.toPrecision(5)}}
+                        </h2>
+                        <small>Dollars</small>
+                    </div>
+                    <div class="column">
+                        <h2 class="subtitle is-4 margin-0">
+                            ${{MPS.toPrecision(5)}}
+                        </h2>
+                        <small>Dollars/s</small>
+                    </div>
+                </div>
+                <a class="has-text-white fill center-content" (click)="toggleInfo()">
+                    <fa-icon icon={{showInfo}} [fixedWidth]="true"></fa-icon>
+                    <small *ngIf="showInfo == 'chevron-up'">Businesses</small>
+                    <small *ngIf="showInfo == 'chevron-down'">Clicker</small>
+                </a>
+            </div>
+        </div>
+        <div class="hero-body" *ngIf="showInfo == 'chevron-up'" [ngClass]="{'no-click':!gradient, 'click':gradient}"
+            (click)="click()">
+        </div>
+        <div class="hero-footer has-text-centered" *ngIf="showInfo == 'chevron-up'">
+            <small>Click above here to earn money!</small>
+        </div>
+    </section>
+    <app-businesses></app-businesses>
+</div>
+<nav class="navbar is-primary is-fixed-bottom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand fill">
+        <a class="navbar-item center-content fill" (click)="openModal()">
+            <fa-icon icon="arrow-up" [fixedWidth]="true"></fa-icon>
+            <strong>Upgrades</strong>
+        </a>
+    </div>
+</nav>
+<app-business-upgrades [modalOpener]="modalOpener"></app-business-upgrades>
+<app-intro></app-intro>

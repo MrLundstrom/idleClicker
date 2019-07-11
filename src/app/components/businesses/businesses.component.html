@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="columns padding-1 is-multiline">
+        <div class="column is-12">
+            <div class="columns padding-0 is-mobile">
+                <div class="column is-one-third padding-1">
+                    <button class="button is-primary is-fullwidth" [ngClass]="{'is-inverted': amount !=1}" (click)="setAmount(1)">x1</button>
+                </div>
+                <div class="column is-one-third padding-1">
+                    <button class="button is-primary is-fullwidth" [ngClass]="{'is-inverted': amount !=10}" (click)="setAmount(10)">x10</button>
+                </div>
+                <div class="column is-one-third padding-1">
+                    <button class="button is-primary is-fullwidth" [ngClass]="{'is-inverted': amount !=25}" (click)="setAmount(25)">x25</button>
+                </div>
+            </div>
+        </div>
+        <div class="column is-half padding-1" *ngFor="let business of businesses;trackBy: trackElement">
+            <app-business-card (businessEvent)="getBusiness($event)" [Business]="business" [Amount]="amount"></app-business-card>
+        </div>
+    </div>
+</div>

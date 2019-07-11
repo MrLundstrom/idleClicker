@@ -1,0 +1,37 @@
+<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <fa-icon icon="piggy-bank" [fixedWidth]="true"></fa-icon>
+  
+          <strong>MoneyMaker</strong>
+        </a>
+  
+        <a role="button" class="navbar-burger burger" (click)="toggleShow()">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+  
+      <div class="navbar-menu" [ngClass]="{'is-active':show}">
+        <div class="navbar-start">
+          <a class="navbar-item" routerLink="" (click)="toggleShow()">
+              <fa-icon icon="gamepad" [fixedWidth]="true"></fa-icon>
+            Game
+          </a>
+          <a class="navbar-item" routerLink="/info" (click)="toggleShow()">
+            <fa-icon icon="info" [fixedWidth]="true"></fa-icon>
+            Info
+          </a>
+        </div>
+  
+        <div class="navbar-end">
+            <a class="navbar-item" routerLink="/settings" (click)="toggleShow()">
+              <fa-icon icon="cog" [fixedWidth]="true"></fa-icon>
+              Settings
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>

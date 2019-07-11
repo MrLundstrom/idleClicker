@@ -1,0 +1,48 @@
+<div class="modal" [ngClass]="{'is-active': show}">
+    <div class="modal-background" (click)="toggleModal()"></div>
+    <div class="modal-content">
+        <div class="side-padding-1">
+            <div class="card gotSticky">
+                <section class="hero is-primary sticky">
+                    <div class="hero-body">
+                        <h2 class="subtitle">
+                            Upgrades </h2>
+                    </div>
+                </section>
+                <div class="padding-1">
+                    <div *ngFor="let upgrade of upgrades;let idx = index; trackBy: trackElement">
+                        <div class="padding-1" *ngIf="!upgrade.status">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns is-mobile">
+                                            <div class="column is-one-third has-text-centered padding-1">
+                                                    <p class="subtitle is-5 margin-0">{{upgrade.targetValue}}</p>
+                                                <fa-icon icon={{upgrade.icon}} size="3x" [fixedWidth]="true"></fa-icon>
+                                            </div>
+                                            <div class="column padding-1">
+                                                <p class="subtitle is-5 margin-1"><fa-icon icon={{icons[upgrade.targetBusiness]}} [fixedWidth]="true"></fa-icon>{{upgrade.targetBusiness}}</p>
+                                                <Strong>Multiplier:</Strong> {{upgrade.multiplier}}
+                                                <div class="padding-top">
+                                                    <button class="button is-rounded is-success is-small is-fullwidth"
+                                                        [disabled]="!afford(idx)" (click)="upgradeBusiness(upgrade)">
+                                                        <fa-icon icon="arrow-up" size="sm" [fixedWidth]="true">
+                                                        </fa-icon>
+                                                        <span>Upgrade</span><span
+                                                            class="fill"></span><span>${{upgrade.cost.toPrecision(5)}}</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padding-1 has-text-centered" *ngIf="upgradesAmount == 0">No more upgrades</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" (click)="toggleModal()"></button>
+</div>

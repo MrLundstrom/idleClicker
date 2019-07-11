@@ -1,0 +1,34 @@
+<div class="card" *ngIf="business">
+    <div class="upgradeProgress">
+        <div class="value size-{{width()}}" ></div>
+    </div>
+    <div class="card-content">
+        <div class="columns is-mobile">
+            <div class="column is-two-fifths has-text-centered padding-1">
+                    <p class="subtitle is-5 margin-0">{{business.name}}</p>
+                <fa-icon icon={{icons[business.name]}} size="3x" [fixedWidth]="true"></fa-icon><br>
+                <div class="padding-top">
+                    <small>${{reward}}/sec</small>
+                </div>
+            </div>
+            <div class="column padding-1">
+                <p class="subtitle is-5 margin-0">Level {{business.level}}</p>
+                <p>
+                    <small>{{business.description}}</small>
+                </p>
+                <div class="progressContainer">
+                    <div class="progressValue timer-{{business.time}}"
+                        [ngClass]="{on:on}">
+                    </div>
+                </div>
+                <div class="padding-top">
+                    <button class="button is-rounded is-success is-small is-fullwidth" [disabled]="!afford(business)"
+                        (click)="upgradeBusiness(business)">
+                        <fa-icon icon="arrow-up" size="sm" [fixedWidth]="true"></fa-icon>
+                        <span>Upgrade</span><span class="fill"></span><span>$ {{cost(business).toPrecision(5)}}</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
