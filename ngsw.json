@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1615299879471,
-  "index": "idleClicker/index.html",
+  "timestamp": 1615300252916,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "idleClicker/favicon.ico",
-        "idleClicker/index.html",
-        "idleClicker/main-es2015.99c216eaaabe1eb3213e.js",
-        "idleClicker/main-es5.99c216eaaabe1eb3213e.js",
-        "idleClicker/polyfills-es2015.f05be9547e4a88183d1e.js",
-        "idleClicker/polyfills-es5.8d45e8aa72d51a1ba617.js",
-        "idleClicker/runtime-es2015.a4dadbc03350107420a4.js",
-        "idleClicker/runtime-es5.a4dadbc03350107420a4.js",
-        "idleClicker/styles.b3314760ac2355ce1591.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.99c216eaaabe1eb3213e.js",
+        "/main-es5.99c216eaaabe1eb3213e.js",
+        "/polyfills-es2015.f05be9547e4a88183d1e.js",
+        "/polyfills-es5.8d45e8aa72d51a1ba617.js",
+        "/runtime-es2015.a4dadbc03350107420a4.js",
+        "/runtime-es5.a4dadbc03350107420a4.js",
+        "/styles.b3314760ac2355ce1591.css"
       ],
       "patterns": []
     },
@@ -31,27 +31,27 @@
         "ignoreVary": true
       },
       "urls": [
-        "idleClicker/assets/icons/apple-touch-icon.png",
-        "idleClicker/assets/icons/icon-192x192.png",
-        "idleClicker/assets/icons/icon-512x512.png"
+        "/assets/icons/apple-touch-icon.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-512x512.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "idleClicker/assets/icons/apple-touch-icon.png": "96a942015ab29817c0e1f619048c6bec9b622f2d",
-    "idleClicker/assets/icons/icon-192x192.png": "5021269723d7be4385dbe36d1491618a25f6455b",
-    "idleClicker/assets/icons/icon-512x512.png": "bb701b144ae4718022be83ea4e90b473defd66f6",
-    "idleClicker/favicon.ico": "e6c29026df7918d7c12fffa392a9284d177a97c2",
-    "idleClicker/index.html": "2fbde059fd4f46ae8551a54059849d9050b5a273",
-    "idleClicker/main-es2015.99c216eaaabe1eb3213e.js": "2c9376c81912afb96287c54e59a97b935357ac3c",
-    "idleClicker/main-es5.99c216eaaabe1eb3213e.js": "b4e2c0dd09f5ee556f3da73cf5ced6c4cb06fc6d",
-    "idleClicker/polyfills-es2015.f05be9547e4a88183d1e.js": "b781f6723ec3a789640a4e9f9108b22c6cef4684",
-    "idleClicker/polyfills-es5.8d45e8aa72d51a1ba617.js": "63c079656c0eab04bd82e392b4e4054874b83e58",
-    "idleClicker/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "idleClicker/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "idleClicker/styles.b3314760ac2355ce1591.css": "2567619fd55f6024443571deb40ee142c374411f"
+    "/assets/icons/apple-touch-icon.png": "96a942015ab29817c0e1f619048c6bec9b622f2d",
+    "/assets/icons/icon-192x192.png": "5021269723d7be4385dbe36d1491618a25f6455b",
+    "/assets/icons/icon-512x512.png": "bb701b144ae4718022be83ea4e90b473defd66f6",
+    "/favicon.ico": "e6c29026df7918d7c12fffa392a9284d177a97c2",
+    "/index.html": "9ef67d2ca334ab0e44bed557177360265920a852",
+    "/main-es2015.99c216eaaabe1eb3213e.js": "2c9376c81912afb96287c54e59a97b935357ac3c",
+    "/main-es5.99c216eaaabe1eb3213e.js": "b4e2c0dd09f5ee556f3da73cf5ced6c4cb06fc6d",
+    "/polyfills-es2015.f05be9547e4a88183d1e.js": "b781f6723ec3a789640a4e9f9108b22c6cef4684",
+    "/polyfills-es5.8d45e8aa72d51a1ba617.js": "63c079656c0eab04bd82e392b4e4054874b83e58",
+    "/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.b3314760ac2355ce1591.css": "2567619fd55f6024443571deb40ee142c374411f"
   },
   "navigationUrls": [
     {
