@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1615298322580,
-  "index": "C:/Program Files/Git/idleClicker/index.html",
+  "timestamp": 1615298628881,
+  "index": "C:/Program Files/Git/dist/businessClicker/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,15 +11,15 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/idleClicker/favicon.ico",
-        "C:/Program Files/Git/idleClicker/index.html",
-        "C:/Program Files/Git/idleClicker/main-es2015.99c216eaaabe1eb3213e.js",
-        "C:/Program Files/Git/idleClicker/main-es5.99c216eaaabe1eb3213e.js",
-        "C:/Program Files/Git/idleClicker/polyfills-es2015.f05be9547e4a88183d1e.js",
-        "C:/Program Files/Git/idleClicker/polyfills-es5.8d45e8aa72d51a1ba617.js",
-        "C:/Program Files/Git/idleClicker/runtime-es2015.a4dadbc03350107420a4.js",
-        "C:/Program Files/Git/idleClicker/runtime-es5.a4dadbc03350107420a4.js",
-        "C:/Program Files/Git/idleClicker/styles.b3314760ac2355ce1591.css"
+        "C:/Program Files/Git/dist/businessClicker/favicon.ico",
+        "C:/Program Files/Git/dist/businessClicker/index.html",
+        "C:/Program Files/Git/dist/businessClicker/main-es2015.99c216eaaabe1eb3213e.js",
+        "C:/Program Files/Git/dist/businessClicker/main-es5.99c216eaaabe1eb3213e.js",
+        "C:/Program Files/Git/dist/businessClicker/polyfills-es2015.f05be9547e4a88183d1e.js",
+        "C:/Program Files/Git/dist/businessClicker/polyfills-es5.8d45e8aa72d51a1ba617.js",
+        "C:/Program Files/Git/dist/businessClicker/runtime-es2015.a4dadbc03350107420a4.js",
+        "C:/Program Files/Git/dist/businessClicker/runtime-es5.a4dadbc03350107420a4.js",
+        "C:/Program Files/Git/dist/businessClicker/styles.b3314760ac2355ce1591.css"
       ],
       "patterns": []
     },
@@ -31,27 +31,27 @@
         "ignoreVary": true
       },
       "urls": [
-        "C:/Program Files/Git/idleClicker/assets/icons/apple-touch-icon.png",
-        "C:/Program Files/Git/idleClicker/assets/icons/icon-192x192.png",
-        "C:/Program Files/Git/idleClicker/assets/icons/icon-512x512.png"
+        "C:/Program Files/Git/dist/businessClicker/assets/icons/apple-touch-icon.png",
+        "C:/Program Files/Git/dist/businessClicker/assets/icons/icon-192x192.png",
+        "C:/Program Files/Git/dist/businessClicker/assets/icons/icon-512x512.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "C:/Program Files/Git/idleClicker/assets/icons/apple-touch-icon.png": "96a942015ab29817c0e1f619048c6bec9b622f2d",
-    "C:/Program Files/Git/idleClicker/assets/icons/icon-192x192.png": "5021269723d7be4385dbe36d1491618a25f6455b",
-    "C:/Program Files/Git/idleClicker/assets/icons/icon-512x512.png": "bb701b144ae4718022be83ea4e90b473defd66f6",
-    "C:/Program Files/Git/idleClicker/favicon.ico": "e6c29026df7918d7c12fffa392a9284d177a97c2",
-    "C:/Program Files/Git/idleClicker/index.html": "029708b6a46eab8dc2dfe2afa6d4a010d6cddec6",
-    "C:/Program Files/Git/idleClicker/main-es2015.99c216eaaabe1eb3213e.js": "2c9376c81912afb96287c54e59a97b935357ac3c",
-    "C:/Program Files/Git/idleClicker/main-es5.99c216eaaabe1eb3213e.js": "b4e2c0dd09f5ee556f3da73cf5ced6c4cb06fc6d",
-    "C:/Program Files/Git/idleClicker/polyfills-es2015.f05be9547e4a88183d1e.js": "b781f6723ec3a789640a4e9f9108b22c6cef4684",
-    "C:/Program Files/Git/idleClicker/polyfills-es5.8d45e8aa72d51a1ba617.js": "63c079656c0eab04bd82e392b4e4054874b83e58",
-    "C:/Program Files/Git/idleClicker/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "C:/Program Files/Git/idleClicker/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "C:/Program Files/Git/idleClicker/styles.b3314760ac2355ce1591.css": "2567619fd55f6024443571deb40ee142c374411f"
+    "C:/Program Files/Git/dist/businessClicker/assets/icons/apple-touch-icon.png": "96a942015ab29817c0e1f619048c6bec9b622f2d",
+    "C:/Program Files/Git/dist/businessClicker/assets/icons/icon-192x192.png": "5021269723d7be4385dbe36d1491618a25f6455b",
+    "C:/Program Files/Git/dist/businessClicker/assets/icons/icon-512x512.png": "bb701b144ae4718022be83ea4e90b473defd66f6",
+    "C:/Program Files/Git/dist/businessClicker/favicon.ico": "e6c29026df7918d7c12fffa392a9284d177a97c2",
+    "C:/Program Files/Git/dist/businessClicker/index.html": "1dc313f5f59da9ddf4af58dec76943588fbccbd9",
+    "C:/Program Files/Git/dist/businessClicker/main-es2015.99c216eaaabe1eb3213e.js": "2c9376c81912afb96287c54e59a97b935357ac3c",
+    "C:/Program Files/Git/dist/businessClicker/main-es5.99c216eaaabe1eb3213e.js": "b4e2c0dd09f5ee556f3da73cf5ced6c4cb06fc6d",
+    "C:/Program Files/Git/dist/businessClicker/polyfills-es2015.f05be9547e4a88183d1e.js": "b781f6723ec3a789640a4e9f9108b22c6cef4684",
+    "C:/Program Files/Git/dist/businessClicker/polyfills-es5.8d45e8aa72d51a1ba617.js": "63c079656c0eab04bd82e392b4e4054874b83e58",
+    "C:/Program Files/Git/dist/businessClicker/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "C:/Program Files/Git/dist/businessClicker/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "C:/Program Files/Git/dist/businessClicker/styles.b3314760ac2355ce1591.css": "2567619fd55f6024443571deb40ee142c374411f"
   },
   "navigationUrls": [
     {
