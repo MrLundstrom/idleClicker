@@ -13,8 +13,7 @@ import { BusinessesComponent } from './components/businesses/businesses.componen
 import { BusinessCardComponent } from './components/business-card/business-card.component';
 import { BusinessUpgradesComponent } from './components/business-upgrades/business-upgrades.component';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faHome, faStore, faHotel, faArrowUp, faDollarSign, faFilm, faPiggyBank, faStopwatch, faSkiing, faPlaneDeparture, faOilCan, faUsers, faBatteryFull, faCoins, faChevronUp, faChevronDown, faTachometerAlt, faSuperscript, faQuestion, faMoneyBillWave, faCog, faInfo, faGamepad, } from '@fortawesome/free-solid-svg-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -44,8 +43,8 @@ import { FooterComponent } from './components/footer/footer.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor() {
-    library.add(faHome,faStore,faHotel,faArrowUp, faDollarSign,faFilm,
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faHome,faStore,faHotel,faArrowUp, faDollarSign,faFilm,
       faPiggyBank,faStopwatch, faSkiing,faPlaneDeparture,faOilCan,
       faUsers,faBatteryFull,faCoins,faChevronUp,faChevronDown,faTachometerAlt,
       faSuperscript,faQuestion,faMoneyBillWave,faCog,faInfo,faGamepad);
